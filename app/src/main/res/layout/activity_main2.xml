@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bwie.myeryuekaoti.activity.Main2Activity">
+    <com.bwie.myeryuekaoti.zidingyi.GramophoneView
+        android:id="@+id/gramophone"
+        app:src="@drawable/ic_launcher_background"
+        app:picture_radiu="80dp"
+        app:disk_rotate_speed="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="60dp"
+        android:onClick="pauseOrstart"
+        android:text="切换播放状态"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

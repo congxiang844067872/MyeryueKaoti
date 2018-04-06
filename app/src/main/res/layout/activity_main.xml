@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.myeryuekaoti.MainActivity">
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="首页"/>
+    <ScrollView
+        android:layout_below="@id/t"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.bwie.myeryuekaoti.zidingyi.MyCreateLayout
+                android:id="@+id/myCreate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </com.bwie.myeryuekaoti.zidingyi.MyCreateLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:text="京东秒杀"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_miaosha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="为你推荐"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_tuijian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
